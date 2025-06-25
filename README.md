@@ -1,81 +1,80 @@
 # 🃏 Super Trunfo: Cidades do Brasil 🇧🇷
 
 [![Feito em C](https://img.shields.io/badge/feito%20em-C-blue?style=flat-square&logo=c)](https://en.wikipedia.org/wiki/C_(programming_language))
-[![Repositório público](https://img.shields.io/github/public-repo-status/P4ulo38/super-trunfo?style=flat-square)](https://github.com/P4ulo38/super-trunfo)
-[![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=flat-square)](#)
+[![Project Status](https://img.shields.io/badge/status-in%20progress-yellow?style=flat-square)](#)
 
-Projeto em linguagem C que simula uma versão do jogo Super Trunfo, com cartas representando cidades brasileiras. O objetivo é comparar dados como população, área territorial e PIB, promovendo o raciocínio lógico e a prática de variáveis, entrada de dados e cálculos matemáticos simples.
+Projeto em linguagem C que simula uma versão do jogo Super Trunfo, usando cartas com dados de cidades brasileiras. Agora com comparações automáticas, Super Poder calculado dinamicamente e lógica de batalha entre cartas!
 
----
-
-## 🎯 Objetivo
-
-Permitir que o usuário cadastre duas cidades e visualize seus atributos organizadamente. O programa realiza cálculos de densidade populacional e PIB per capita de forma automática, sem uso de estruturas de repetição ou decisão.
+**This C project simulates a Super Trunfo-style game, using cards representing Brazilian cities. Includes attribute comparisons, automatic “Super Power” calculation, and final scoring.**
 
 ---
 
-## 💡 Funcionalidades
+## 🎯 Objetivo | Purpose
+
+Permitir que o usuário cadastre duas cidades, visualize seus dados e compare atributos como população, área, PIB, etc.
+
+**Allows the user to register two cities, view their data, and compare attributes like population, area, GDP, and more.**
+
+---
+
+## 💡 Funcionalidades | Features
 
 - Entrada de dados via teclado  
-- Armazenamento em variáveis  
-- Cálculo automático de:
-  - **Densidade populacional**
-  - **PIB per capita**
-- Impressão formatada dos dados  
-- Código estruturado, sem `if`, `else`, `for`, `while`
+- Cálculo de:
+  - Densidade populacional  
+  - PIB per capita  
+  - Super Poder (todos os atributos + 1/densidade)  
+- Comparação automática entre atributos  
+- Impressão dos resultados no terminal  
+- Sem uso de `if`, `else`, `for`, `while`  
+
+**Data input via keyboard, automatic calculation of:**
+- Population density  
+- GDP per capita  
+- Super Power (sum of numeric attributes plus inverse density)  
+- Automatic comparison of attributes  
+- No use of conditional or loop structures
 
 ---
 
-## 🛠️ Como compilar
-
-Use o GCC (MinGW ou outro compilador C) via terminal:
+## 🛠️ Como compilar | How to compile
 
 ```bash
 gcc super_trunfo.c -o super_trunfo.exe
 ```
 
-Se quiser salvar o executável em uma pasta de saída:
-
-```bash
-gcc super_trunfo.c -o output/super_trunfo.exe
-```
-
 ---
 
-## ▶️ Como executar
-
-No Windows (via PowerShell, Prompt de Comando ou terminal do VS Code):
+## ▶️ Como executar | How to run
 
 ```bash
 .\super_trunfo.exe
 ```
 
-Ou, se estiver na pasta `output`:
-
-```bash
-.\output\super_trunfo.exe
-```
-
 ---
 
-## 🧪 Exemplo de uso
+## 🧪 Exemplo de uso | Example output
 
 ```
 Digite o nome da cidade: Recife
 Digite a população: 1653461
 Digite a área (em km²): 218.84
-Digite o PIB (em milhões): 52000
+Digite o PIB (em bilhões): 52
+Digite o número de pontos turísticos: 5
 
-[Carta 1] Recife
-População: 1.653.461
-Área: 218.84 km²
-Densidade: 7555.1 hab/km²
-PIB per capita: R$ 31,446.76
+--- Comparação de Cartas ---
+População: Carta 1 venceu (1)
+Área: Carta 1 venceu (0)
+PIB: Carta 1 venceu (1)
+Pontos Turísticos: Carta 1 venceu (1)
+Densidade Populacional: Carta 1 venceu (0)
+PIB per Capita: Carta 1 venceu (1)
+Super Poder: Carta 1 venceu (1)
 ```
 
 ---
 
-## 📁 Estrutura do projeto
+## 📁 Estrutura do projeto | Project Structure
 
 ```
 super-trunfo/
@@ -90,7 +89,7 @@ super-trunfo/
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Autor | Author
 
 **Paulo Augusto**  
 📧 [pauloaugusto37.ti@gmail.com](mailto:pauloaugusto37.ti@gmail.com)  
@@ -98,6 +97,7 @@ super-trunfo/
 
 ---
 
-## 🚀 Licença
+## 🚀 Licença | License
 
-Este projeto é de uso educacional e pessoal. Fique à vontade para clonar, adaptar e compartilhar!
+Projeto de uso educacional e pessoal.  
+**For educational and personal use.**
